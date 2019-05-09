@@ -4,3 +4,8 @@
 .DS_Store
 /docs/build/
 /docs/site/
+deps/build.log
+deps/libxsimdmath.so
+deps/xsimdmathfunctions.cpp
+deps/xsimd/*
+.vscode/*
