@@ -1,0 +1,10 @@
+name = "xsimdwrap"
+uuid = "b9b7a223-629f-5757-a0fe-5fc90c39777c"
+authors = ["chriselrod <elrodc@gmail.com>"]
+version = "0.1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
