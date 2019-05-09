@@ -7,5 +7,5 @@
 deps/build.log
 deps/libxsimdmath.so
 deps/xsimdmathfunctions.cpp
-deps/xsimd/*
+deps/xsimd
 .vscode/*
