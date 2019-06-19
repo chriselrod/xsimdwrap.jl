@@ -1,6 +1,10 @@
 module xsimdwrap
 
 using VectorizationBase: REGISTER_SIZE
+using SIMDPirates, LoopVectorization
+using MacroTools: @capture
+
+export @xvectorize
 
 const xsimdmath = joinpath(@__DIR__, "..", "deps", "libxsimdmath.so");
 
@@ -97,5 +101,7 @@ for f ∈ float_to_floatfloat
     end
 end
 
+
+include("vectorize_loops.jl")
 
 end # module
