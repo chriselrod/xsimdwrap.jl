@@ -9,3 +9,6 @@ deps/libxsimdmath.so
 deps/xsimdmathfunctions.cpp
 deps/xsimd
 .vscode/*
+*~
+src/#*#
+tests/#*#
