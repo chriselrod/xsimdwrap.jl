@@ -100,6 +100,6 @@ else
 end
 
 gen_cpp_code()
-run(`g++ -I./xsimd/include $(split(get(ENV,"CXXFLAGS",""))) -fno-semantic-interposition -march=native -Ofast -shared -fPIC xsimdmathfunctions.cpp -o libxsimdmath.so`)
+run(`$(get(ENV,"CXX","g++")) -I./xsimd/include $(split(get(ENV,"CXXFLAGS",""))) -fno-semantic-interposition -march=native -Ofast -shared -fPIC xsimdmathfunctions.cpp -o libxsimdmath.so`)
 
 

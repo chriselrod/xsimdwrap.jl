@@ -1,7 +1,9 @@
 module xsimdwrap
 
+using VectorizationBase
 using VectorizationBase: REGISTER_SIZE
-using SIMDPirates, LoopVectorization
+using SIMDPirates
+using LoopVectorization: vectorize_body
 using MacroTools: @capture
 
 export @xvectorize
